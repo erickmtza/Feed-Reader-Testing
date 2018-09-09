@@ -83,11 +83,11 @@ $(function() {
                       secondEntry = $('.feed').find(allFeeds.url);
                       done();
                   });
+                });
               });
               // Test that ensures that the content actually changes.
-               it('updates content', function() {
-                 expect(firstEntry).not.toBe(secondEntry);
+              it('updates content', function() {
+                expect(firstEntry).not.toBe(secondEntry);
                });
-             });
     });
 }());
