@@ -67,7 +67,7 @@ $(function() {
         })
         // Test that ensures the loadFeed has at least a single .entry element within the .feed container.
          it('checks for single element in .feed container', function() {
-            expect($('.feed').children.length > 0).toBe(true);
+            expect($('.feed .entry').length > 0).toBe(true);
          });
 
     });
