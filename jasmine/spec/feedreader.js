@@ -79,15 +79,15 @@ $(function() {
               beforeEach(function(done) {
                 loadFeed(0, function() {
                   firstEntry = $('.feed').find(allFeeds.url);
-                });
-                loadFeed(1, function() {
-                  secondEntry = $('.feed').find(allFeeds.url);
-                  done();
-                });
-              })
+                  loadFeed(1, function() {
+                      secondEntry = $('.feed').find(allFeeds.url);
+                      done();
+                  });
+              });
               // Test that ensures that the content actually changes.
                it('updates content', function() {
                  expect(firstEntry).not.toBe(secondEntry);
-               })
-          });
+               });
+             });
+    });
 }());
