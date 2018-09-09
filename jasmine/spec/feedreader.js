@@ -27,7 +27,7 @@ $(function() {
             for(let feed of allFeeds) {
                 expect(feed.url).toBeDefined();
                 expect(feed.url.length).not.toBe(0);
-            }
+            };
          });
 
         // Test that loops through the allFeeds object and ensures it has a name defined and that the name is not empty.
@@ -35,7 +35,7 @@ $(function() {
             for(let feed of allFeeds) {
                 expect(feed.name).toBeDefined();
                 expect(feed.name.length).not.toBe(0);
-            }
+            };
          });
     });
 
@@ -46,7 +46,7 @@ $(function() {
         // Test that ensures the menu element is hidden by searching for the '.menu-hidden' in the body tag
          it('ensures menu element is hidden', function() {
            expect($('body').hasClass('menu-hidden')).toBe(true);
-         })
+         });
 
          // Test that ensures the menu changes visibility when the menu icon is clicked.
           it('changes menu visibility', function() {
@@ -64,7 +64,7 @@ $(function() {
         // Calls a function to do an asynchronous request
         beforeEach(function(done) {
           loadFeed(0, done);
-        })
+        });
         // Test that ensures the loadFeed has at least a single .entry element within the .feed container.
          it('checks for single element in .feed container', function() {
             expect($('.feed .entry').length > 0).toBe(true);
