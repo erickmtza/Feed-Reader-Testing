@@ -18,3 +18,13 @@ Putting into practice skills for a "test-driven development".
 * Test that ensures the menu changes visibility when the menu icon is clicked.
 * Tests if the loadFeed function has at least a single '.entry' within the '.feed' container
 * Test that ensures when a new feed is loaded by the loadFeed function that the content actually changes.
+
+# Resources
+
+Links used to help make this possible:
+
+* [Jasmine](https://jasmine.github.io/2.0/introduction.html)
+* [Google](https://www.google.com/)
+* [Mozilla MDN](https://developer.mozilla.org/en-US/)
+* [W3Schools](https://www.w3schools.com/default.asp)
+* [YouTube](https://www.youtube.com/)
